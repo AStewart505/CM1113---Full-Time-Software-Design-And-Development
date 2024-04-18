@@ -1,5 +1,3 @@
-package Coursework.test;
-
 public abstract class Profession{
 
     private String professionName;
