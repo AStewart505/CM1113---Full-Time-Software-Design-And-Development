@@ -1,22 +1,26 @@
-package Coursework.test;
-
 public class Hunter extends Profession {
 
-    private String specialty;
+    private Specialities specialty;
+
+    enum Specialities{
+        Assassin,
+        Scout,
+        Marksman
+    }
 
     public Hunter(String professionName, String startingSkills, int strengthGrowth, int speedGrowth,
             int intelligenceGrowth, int manaGrowth, int staminaGrowth, int healthGrowth, int defenceGrowth,
-            String specialty) {
+            Specialities specialty) {
         super(professionName, startingSkills, strengthGrowth, speedGrowth, intelligenceGrowth, manaGrowth,
                 staminaGrowth, healthGrowth, defenceGrowth);
         this.specialty = specialty;
     }
 
-    public String getSpecialty() {
+    public Specialities getSpecialty() {
         return specialty;
     }
 
-    public void setSpecialty(String specialty) {
+    public void setSpecialty(Specialities specialty) {
         this.specialty = specialty;
     }
 
