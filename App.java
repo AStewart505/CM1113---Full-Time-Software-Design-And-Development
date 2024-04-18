@@ -29,6 +29,9 @@ public class App {
                 }else if(clanChoice.equals("EarthBorn")) {
                     Dwarf playerSpecies = new Dwarf(8,4,6,4,8,9,8,"Dwarf","Black Iron Mountains","Gaia's Embrace", Dwarf.Clans.EarthBorn);
                     playerSpecies.toString();
+                } else{
+                    System.out.println("Error. Please Start Selection Again.");
+                    selection= false;
                 }
             
             }else if( speciesChoice.equals("Elf")){
@@ -51,6 +54,9 @@ public class App {
                 }else if(variantChoice.equals("LIGHT")){
                     Elf playerSpecies = new Elf(5,8,7,8,6,7,5,"Elf","Sirian Forests", "Divide Enlightenment", Elf.Variants.DARK);
                     playerSpecies.toString();
+                }  else{
+                    System.out.println("Error. Please Start Selection Again.");
+                    selection= false;
                 }
 
             }else if(speciesChoice.equals("Human")){
@@ -73,6 +79,9 @@ public class App {
                 }else if (factionChoice.equals("Bandits")){
                     Human playerSpecies = new Human(6,6,5,5,7,8,5,"Human","Eastern Plains","Light Fingered",Human.Factions.Bandits);
                     playerSpecies.toString();
+                }  else{
+                    System.out.println("Error. Please Start Selection Again.");
+                    selection= false;
                 }
                 
             } else if (speciesChoice.equals("Half Orc")){
@@ -95,6 +104,9 @@ public class App {
                 } else if (tribeChoice.equals("StoneBreaker")){
                     HalfOrc playerSpecies = new HalfOrc(8,7,5,4,7,8,8,"Half-Orc","The Gray","Terra Breaker", HalfOrc.Tribes.StoneBreaker);
                     playerSpecies.toString();
+                }  else{
+                    System.out.println("Error. Please Start Selection Again.");
+                    selection= false;
                 }
 
             }       
@@ -125,7 +137,10 @@ public class App {
             } else if (elementChoice.equals("Earth")){
                 Mage playerProffession = new Mage("Mage", "Iron Heart", 3,4,6,8,6,5,4,Mage.Elements.Earth);
                 playerProffession.toString();
-            }
+            }  else{
+                    System.out.println("Error. Please Start Selection Again.");
+                    selection= false;
+                }
 
         }  if (professionChoice.equals("Hunter")){
             System.out.println("Please Select your Speciality.Assassin, Scout, Marksman.");
@@ -142,7 +157,10 @@ public class App {
             } else if (specialityChoice.equals("Marksman")){
                 Hunter playerProffession = new Hunter("Hunter"," Steady Aim", 5,7,6,5,5,6,4,Hunter.Specialities.Marksman);
                 playerProffession.toString();
-            }
+            }  else{
+                    System.out.println("Error. Please Start Selection Again.");
+                    selection= false;
+                }
         
         }  if (professionChoice.equals("Brawler")){
             System.out.println("Please Select your Role. Tanker, Striker, Pugilist.");
@@ -159,7 +177,10 @@ public class App {
             } else if (roleChoice.equals("Pugilist")){
                 Brawler playerProffession = new Brawler("Brawler","Solid Fist",8,3,6,3,6,8,7,Brawler.Roles.Pugilist);
                 playerProffession.toString();
-            }
+            }  else{
+                    System.out.println("Error. Please Start Selection Again.");
+                    selection= false;
+                }
         }
     }
     while(selection==true);
