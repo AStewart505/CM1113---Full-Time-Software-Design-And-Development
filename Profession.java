@@ -1,108 +1,88 @@
-public abstract class Profession{
 
-    private String professionName;
-    private String startingSkills;
-    private int strengthGrowth;
-    private int speedGrowth;
-    private int intelligenceGrowth;
-    private int manaGrowth;
-    private int staminaGrowth;
-    private int healthGrowth;
-    private int defenceGrowth;
+public class Stats {
     
-    public Profession(String professionName, String startingSkills, int strengthGrowth, int speedGrowth,
-            int intelligenceGrowth, int manaGrowth, int staminaGrowth, int healthGrowth, int defenceGrowth) {
-        this.professionName = professionName;
-        this.startingSkills = startingSkills;
-        this.strengthGrowth = 0;
-        this.speedGrowth = 0;
-        this.intelligenceGrowth = 0;
-        this.manaGrowth = 0;
-        this.staminaGrowth = 0;
-        this.healthGrowth = 0;
-        this.defenceGrowth = 0;
-    }
+    private int strength;
+    private int speed;
+    private int intelligence;
+    private int mana;
+    private int stamina;
+    private int health;
+    private int defence;
+    
+public Stats(int strength, int speed, int intelligence, int mana, int stamina, int health, int defence) {
+    this.strength = strength;
+    this.speed = speed;
+    this.intelligence = intelligence;
+    this.mana = mana;
+    this.stamina = stamina;
+    this.health = health;
+    this.defence = defence;
+}
 
-    public String getProfessionName() {
-        return professionName;
-    }
+public int getStrength() {
+    return strength;
+}
 
-    public String getStartingSkills() {
-        return startingSkills;
-    }
+public int getSpeed() {
+    return speed;
+}
 
-    public int getStrengthGrowth() {
-        return strengthGrowth;
-    }
+public int getIntelligence() {
+    return intelligence;
+}
 
-    public int getSpeedGrowth() {
-        return speedGrowth;
-    }
+public int getMana() {
+    return mana;
+}
 
-    public int getIntelligenceGrowth() {
-        return intelligenceGrowth;
-    }
+public int getStamina() {
+    return stamina;
+}
 
-    public int getManaGrowth() {
-        return manaGrowth;
-    }
+public int getHealth() {
+    return health;
+}
 
-    public int getStaminaGrowth() {
-        return staminaGrowth;
-    }
+public int getDefence() {
+    return defence;
+}
 
-    public int getHealthGrowth() {
-        return healthGrowth;
-    }
+protected void setStrength(int strength) {
+    this.strength = strength;
+}
 
-    public int getDefenceGrowth() {
-        return defenceGrowth;
-    }
+protected void setSpeed(int speed) {
+    this.speed = speed;
+}
 
-    protected void setProfessionName(String professionName) {
-        this.professionName = professionName;
-    }
+protected void setIntelligence(int intelligence) {
+    this.intelligence = intelligence;
+}
 
-    protected void setStartingSkills(String startingSkills) {
-        this.startingSkills = startingSkills;
-    }
+protected void setMana(int mana) {
+    this.mana = mana;
+}
 
-    protected void setStrengthGrowth(int strengthGrowth) {
-        this.strengthGrowth = strengthGrowth;
-    }
+protected void setStamina(int stamina) {
+    this.stamina = stamina;
+}
 
-    protected void setSpeedGrowth(int speedGrowth) {
-        this.speedGrowth = speedGrowth;
-    }
+protected void setHealth(int health) {
+    this.health = health;
+}
 
-    protected void setIntelligenceGrowth(int intelligenceGrowth) {
-        this.intelligenceGrowth = intelligenceGrowth;
-    }
+protected void setDefence(int defence) {
+    this.defence = defence;
+}
 
-    protected void setManaGrowth(int manaGrowth) {
-        this.manaGrowth = manaGrowth;
-    }
 
-    protected void setStaminaGrowth(int staminaGrowth) {
-        this.staminaGrowth = staminaGrowth;
-    }
-
-    protected void setHealthGrowth(int healthGrowth) {
-        this.healthGrowth = healthGrowth;
-    }
-
-    protected void setDefenceGrowth(int defenceGrowth) {
-        this.defenceGrowth = defenceGrowth;
-    }
-
-    @Override
-    public String toString() {
-        return "Profession [professionName=" + professionName + ", startingSkills=" + startingSkills
-                + ", strengthGrowth= +" + strengthGrowth + ", speedGrowth= +" + speedGrowth + ", intelligenceGrowth= +"
-                + intelligenceGrowth + ", manaGrowth= +" + manaGrowth + ", staminaGrowth= +" + staminaGrowth
-                + ", healthGrowth=" + healthGrowth + ", defenceGrowth= +" + defenceGrowth + "]";
-    }
-
+public String toString() {
+    return "Stats [strength=" + strength + ", speed=" + speed + ", intelligence=" + intelligence + ", mana=" + mana
+            + ", stamina=" + stamina + ", health=" + health + ", defence=" + defence + "]";
+}
     
 
+
+
+    
 }
