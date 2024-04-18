@@ -1,6 +1,6 @@
 public class Elf extends Species{
     
-    private String variant;
+    private Variants variant;
 
 
     enum Variants{
@@ -14,7 +14,7 @@ public class Elf extends Species{
 //----------Constructor----------//
 
     public Elf(int strength, int speed, int intelligence, int mana, int stamina, int health, int defence,
-            String speciesName, String spawnpoint, String speciesSkill, String aVariant) {
+            String speciesName, String spawnpoint, String speciesSkill, Variants aVariant) {
         super(strength, speed, intelligence, mana, stamina, health, defence, speciesName, spawnpoint,
                 speciesSkill);
         variant = aVariant;
@@ -22,7 +22,7 @@ public class Elf extends Species{
 
 
 //----------Getters Methods----------//
-    public String getVariant() {
+    public Variants getVariant() {
         return variant;
     }
 
@@ -43,70 +43,60 @@ public class Elf extends Species{
 
 
 
-//----------Setter Methods----------//
+    //----------Setter Methods----------//
 
-
-    public void setVariant(String variant) {
-        this.variant = variant;
-    }
-
-@Override
     public void setSpawnpoint(String aSpawnPoint) {
-        super.setSpawnpoint("Great Forest");
+        super.setSpawnpoint(aSpawnPoint);
     }
 
 
-    @Override
+
     public void setSpeciesName(String aSpeciesName) {
-        super.setSpeciesName("Elf");
+       super.setSpeciesName(aSpeciesName);
     }
 
 
-    @Override
-    public void setSpeciesSkill(String aSpeciesSkill) {
-        super.setSpeciesSkill("Mana Spring");
+
+    public void setSpeciesSkill(String aSpeciesSkill)  {
+        super.setSpeciesSkill(aSpeciesSkill);
     }
 
 
-    @Override
-    public void setDefence(int defence) {
-        super.setDefence(4);
+
+    public void setDefence(int aDefence) {
+        super.setDefence(aDefence);
     }
 
 
-    @Override
-    public void setHealth(int health) {
-        super.setHealth(6);
+
+    public void setHealth(int aHealth) {
+        super.setHealth(aHealth);
     }
 
 
-    @Override
-    public void setIntelligence(int intelligence) {
-        super.setIntelligence(8);
+    public void setIntelligence(int aIntelligence) {
+        super.setIntelligence(aIntelligence);
     }
 
 
-    @Override
-    public void setMana(int mana) {
-        super.setMana(9);
+    public void setMana(int aMana) {
+        super.setMana(aMana);
     }
 
 
-    @Override
-    public void setSpeed(int speed) {
-        super.setSpeed(8);
+    public void setSpeed(int aSpeed) {
+        super.setSpeed(aSpeed);
     }
 
 
-    @Override
-    public void setStamina(int stamina) {
-        super.setStamina(7);
+
+    public void setStamina(int aStamina) {
+        super.setStamina(aStamina);
     }
 
 
-    @Override
-    public void setStrength(int strength) {
-        super.setStrength(5);
+    public void setStrength(int aStrength) {
+        super.setStrength(aStrength);
     }
 
 
@@ -115,10 +105,5 @@ public class Elf extends Species{
     public String toString(){
         return super.toString() + "Variant: " + getVariant();
     }
-
-
-
-
-
 
 }
