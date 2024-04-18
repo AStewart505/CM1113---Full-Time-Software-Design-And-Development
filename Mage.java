@@ -1,22 +1,28 @@
-package Coursework.test;
-
 public class Mage extends Profession {
 
-    private String element;
+    private Elements element;
+
+    enum Elements{
+        Lightning,
+        Fire,
+        Ice,
+        Space,
+        Earth
+    }
 
     public Mage(String professionName, String startingSkills, int strengthGrowth, int speedGrowth,
             int intelligenceGrowth, int manaGrowth, int staminaGrowth, int healthGrowth, int defenceGrowth,
-            String element) {
+            Elements element) {
         super(professionName, startingSkills, strengthGrowth, speedGrowth, intelligenceGrowth, manaGrowth,
                 staminaGrowth, healthGrowth, defenceGrowth);
         this.element = element;
     }
 
-    public String getElement() {
+    public Elements getElement() {
         return element;
     }
 
-    public void setElement(String element) {
+    public void setElement(Elements element) {
         this.element = element;
     }
 
