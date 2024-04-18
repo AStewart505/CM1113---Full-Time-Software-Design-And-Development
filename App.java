@@ -1,3 +1,7 @@
+//Andrew Stewart(2316979)
+//Jack Dunn:2307544
+//Gregor Macloud:2303200
+
 import java.util.*;
 
 public class App {
