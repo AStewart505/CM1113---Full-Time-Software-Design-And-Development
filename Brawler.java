@@ -1,22 +1,26 @@
-package Coursework.test;
-
 public class Brawler extends Profession {
 
-    private String role;
+    private Roles role;
+
+    enum Roles{
+        Tanker,
+        Pugilist,
+        Striker
+    }
 
     public Brawler(String professionName, String startingSkills, int strengthGrowth, int speedGrowth,
             int intelligenceGrowth, int manaGrowth, int staminaGrowth, int healthGrowth, int defenceGrowth,
-            String role) {
+            Roles role) {
         super(professionName, startingSkills, strengthGrowth, speedGrowth, intelligenceGrowth, manaGrowth,
                 staminaGrowth, healthGrowth, defenceGrowth);
         this.role = role;
     }
 
-    public String getRole() {
+    public Roles getRole() {
         return role;
     }
 
-    public void setRole(String role) {
+    public void setRole(Roles role) {
         this.role = role;
     }
 
