@@ -8,9 +8,9 @@ public abstract class Species extends Stats {
     public Species(int strength, int speed, int intelligence, int mana, int stamina, int health, int defence,
             String speciesName, String spawnpoint, String speciesSkill) {
         super(strength, speed, intelligence, mana, stamina, health, defence);
-        this.speciesName = speciesName;
-        this.spawnpoint = spawnpoint;
-        this.speciesSkill = speciesSkill;
+        this.speciesName = "Blank";
+        this.spawnpoint = "Blank";
+        this.speciesSkill = "Blank";
     }
 
 
@@ -52,11 +52,11 @@ public abstract class Species extends Stats {
 //----------Other Methods----------//
 
     public String toString(){
-        String str = "Species Name: " + getSpeciesName();
+        String str = "Species Name: " + getSpeciesName() + "\n";
+        str += "Spawnpoint: " + getSpawnPoint() + "\n";
+        str += "Species Skill: " + getSpeciesSkill() + "\n";
 
-        str += "Spawnpoint: " + getSpawnPoint();
-        str += "Species Skill: " + getSpeciesSkill();
-
+        str+= super.toString();
 
 
         return str;
