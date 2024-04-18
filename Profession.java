@@ -1,88 +1,164 @@
 
-public class Stats {
+public class Profession
+{
     
-    private int strength;
-    private int speed;
-    private int intelligence;
-    private int mana;
-    private int stamina;
-    private int health;
-    private int defence;
+    private String professionName;
+    private String startingSkills;
+    private int strengthGrowth;
+    private int speedGrowth;
+    private int intelligenceGrowth;
+    private int manaGrowth; 
+    private int staminaGrowth;
+    private int healthGrowth;
+    private int defenceGrowth;
+
+
+
+
+public Profession(String professionName, String startingSkills, int strengthGrowth, int speedGrowth,
+            int intelligenceGrowth, int manaGrowth, int staminaGrowth, int healthGrowth, int defenceGrowth) {
+        this.professionName = professionName;
+        this.startingSkills = startingSkills;
+        this.strengthGrowth = strengthGrowth;
+        this.speedGrowth = speedGrowth;
+        this.intelligenceGrowth = intelligenceGrowth;
+        this.manaGrowth = manaGrowth;
+        this.staminaGrowth = staminaGrowth;
+        this.healthGrowth = healthGrowth;
+        this.defenceGrowth = defenceGrowth;
+    }
+
+
+
+
+public String getProfessionName() {
+    return professionName;
+}
+
+
+
+
+public void setProfessionName(String professionName) {
+    this.professionName = professionName;
+}
+
+
+
+
+public String getStartingSkills() {
+    return startingSkills;
+}
+
+
+
+
+public void setStartingSkills(String startingSkills) {
+    this.startingSkills = startingSkills;
+}
+
+
+
+
+public int getStrengthGrowth() {
+    return strengthGrowth;
+}
+
+
+
+
+public void setStrengthGrowth(int strengthGrowth) {
+    this.strengthGrowth = strengthGrowth;
+}
+
+
+
+
+public int getSpeedGrowth() {
+    return speedGrowth;
+}
+
+
+
+
+public void setSpeedGrowth(int speedGrowth) {
+    this.speedGrowth = speedGrowth;
+}
+
+
+
+
+public int getIntelligenceGrowth() {
+    return intelligenceGrowth;
+}
+
+
+
+
+public void setIntelligenceGrowth(int intelligenceGrowth) {
+    this.intelligenceGrowth = intelligenceGrowth;
+}
+
+
+
+
+public int getManaGrowth() {
+    return manaGrowth;
+}
+
+
+
+
+public void setManaGrowth(int manaGrowth) {
+    this.manaGrowth = manaGrowth;
+}
+
+
+
+
+public int getStaminaGrowth() {
+    return staminaGrowth;
+}
+
+
+
+
+public void setStaminaGrowth(int staminaGrowth) {
+    this.staminaGrowth = staminaGrowth;
+}
+
+
+
+
+public int getHealthGrowth() {
+    return healthGrowth;
+}
+
+
+
+
+public void setHealthGrowth(int healthGrowth) {
+    this.healthGrowth = healthGrowth;
+}
+
+
+
+
+public int getDefenceGrowth() {
+    return defenceGrowth;
+}
+
+
+
+
+public void setDefenceGrowth(int defenceGrowth) {
+    this.defenceGrowth = defenceGrowth;
+}
     
-public Stats(int strength, int speed, int intelligence, int mana, int stamina, int health, int defence) {
-    this.strength = strength;
-    this.speed = speed;
-    this.intelligence = intelligence;
-    this.mana = mana;
-    this.stamina = stamina;
-    this.health = health;
-    this.defence = defence;
-}
-
-public int getStrength() {
-    return strength;
-}
-
-public int getSpeed() {
-    return speed;
-}
-
-public int getIntelligence() {
-    return intelligence;
-}
-
-public int getMana() {
-    return mana;
-}
-
-public int getStamina() {
-    return stamina;
-}
-
-public int getHealth() {
-    return health;
-}
-
-public int getDefence() {
-    return defence;
-}
-
-protected void setStrength(int strength) {
-    this.strength = strength;
-}
-
-protected void setSpeed(int speed) {
-    this.speed = speed;
-}
-
-protected void setIntelligence(int intelligence) {
-    this.intelligence = intelligence;
-}
-
-protected void setMana(int mana) {
-    this.mana = mana;
-}
-
-protected void setStamina(int stamina) {
-    this.stamina = stamina;
-}
-
-protected void setHealth(int health) {
-    this.health = health;
-}
-
-protected void setDefence(int defence) {
-    this.defence = defence;
-}
-
 
 public String toString() {
-    return "Stats [strength=" + strength + ", speed=" + speed + ", intelligence=" + intelligence + ", mana=" + mana
-            + ", stamina=" + stamina + ", health=" + health + ", defence=" + defence + "]";
+    return "Stats [strength Growth=" + strengthGrowth + ", speed Growth=" + speedGrowth + ", intelligence Growth=" + intelligenceGrowth + ", mana growth =" + manaGrowth
+            + ", stamina Growth=" + staminaGrowth + ", health Growth=" + healthGrowth + ", defence Growth=" + defenceGrowth + "]";
 }
-    
-
-
 
     
 }
